@@ -44,7 +44,7 @@ const IntroPage = ({ darkMode, typingEffect, PageName }) => {
 		<div className={`IntroPage `}>
 			<div className={`IntroContent ${darkMode ? "darkIntroPage" : "lightIntroPage"} ${typingEffect ? "" : "Pages"}`}>
 				<div className="heading">
-					<span className={`${darkMode ? "darkIntroTitle" : "littleIntroTitle"}`}>Network Wizards</span>
+					<span className={`${darkMode ? "darkIntroTitle" : "littleIntroTitle"}`}>CYBERKAPOOR...</span>
 				</div>
 				<div className="changeContainer">
 					<div className="changeCourses">
@@ -57,10 +57,10 @@ const IntroPage = ({ darkMode, typingEffect, PageName }) => {
 					</div>
 				</div>
 				<div className="introPara">
-					NetworkWizards is a comprehensive resource for individuals interested in coding, computer networking, and cyber security. Our aim is to
+					Cyberkapoor is a comprehensive resource for individuals interested in coding, computer networking, and cyber security. Our aim is to
 					provide accessible and informative content to help you expand your skills in these exciting fields. From tutorials and how-to guides to the
 					latest advancements, our website has everything you need to become a coding, networking, or security expert. Join our community of
-					like-minded individuals and stay updated with our newsletter. NetworkWizards - your one-stop-shop for all things technology.
+					like-minded individuals and stay updated with our newsletter. Cyberkapoor - your one-stop-shop for all things technology.
 				</div>
 				<Box />
 			</div>

@@ -13,15 +13,15 @@ const Footer = () => {
 		mail: process.env.REACT_APP_SACHIN_GMAIL,
 	};
 	const Raj = {
-		name: "Rajvinder Singh",
+		name: "Gautam kapoor",
 		Intro: process.env.REACT_APP_RAJ_INTRO,
 		img: { raj },
 		linkedIn: process.env.REACT_APP_RAJ_LINKEDIN,
 		github: process.env.REACT_APP_RAJ_GITHUB,
 		mail: process.env.REACT_APP_RAJ_GMAIL,
 	};
-	const Info1 = `Welcome to NetworkWizards.tech, where coding, hacking, and computer networking meet. Our aim is to provide you with comprehensive, up-to-date information and knowledge on these exciting and rapidly evolving fields.`;
-	const Info2 = `We are a team of two BCA students, passionate about technology and its impact on the world. Our web developer Sachin Yadav creates interactive and engaging content, while our post writer Rajvinder Singh ensures the content is easily digestible and informative. Together, we strive to make technology accessible to everyone, regardless of their background or experience`;
+	const Info1 = `Welcome to Cyberkapoor, where coding, hacking, and computer networking meet. Our aim is to provide you with comprehensive, up-to-date information and knowledge on these exciting and rapidly evolving fields.`;
+	const Info2 = `We are a team of two BCA students, passionate about technology and its impact on the world. Our web developer Sachin Yadav creates interactive and engaging content, while our post writer Gautam kapoor ensures the content is easily digestible and informative. Together, we strive to make technology accessible to everyone, regardless of their background or experience`;
 	return (
 		<footer className="Footer">
 			<div className="footer1">
