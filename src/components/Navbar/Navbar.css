@@ -1,0 +1,276 @@
+.Navbar {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 25;
+}
+
+.darkNavbar {
+    background: rgba(51, 45, 103, 0.2);
+    /* background-image: linear-gradient(-255deg, #28292f 0%, #0f131b 100%); */
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    font-weight: bolder;
+    box-shadow: 0px 3px 5px rgb(43, 32, 104);
+}
+
+.lightNavbar {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    box-shadow: 0px 3px 5px #9e9e9e;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: purple;
+}
+
+.darkLink {
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+    text-decoration: none;
+}
+
+/* .lists {
+    border: 1px solid red;
+    width: 500px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    cursor: pointer;
+} */
+
+
+/* Input */
+
+.input-box input {
+    height: 30px;
+    width: 100%;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 16px;
+    outline: none;
+    transition: border 30ms ease;
+}
+
+.input-box input:focus,
+.input-box input:valid {
+    border: 1px solid #9b59b6;
+    /* box-shadow: 2px 2px 6px 0px; */
+}
+
+.input-box input:not(:focus) {
+    box-shadow: none;
+    border: none;
+}
+
+.darkSearch {
+    background-color: #512f9a;
+    color: white;
+}
+
+/* switch */
+
+/* The switch - the box around the slider */
+.switch {
+    font-size: 12px;
+    position: relative;
+    display: inline-block;
+    width: 3.5em;
+    height: 2em;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    --background: #d63aee;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--background);
+    transition: .1s;
+    border-radius: 30px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1.4em;
+    width: 1.4em;
+    border-radius: 50%;
+    left: 10%;
+    bottom: 15%;
+    box-shadow: inset 8px -4px 0px 0px #fff000;
+    background: var(--background);
+    transition: .2s;
+}
+
+input:checked+.slider {
+    background-color: #5f3ea6;
+}
+
+input:checked+.slider:before {
+    transform: translateX(100%);
+    box-shadow: inset 15px -4px 0px 15px #fff000;
+}
+
+.switched {
+    display: none;
+}
+
+
+/* Responsive Navabar collapse at 850px */
+@media screen and (max-width: 850px) {
+
+    .lists {
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: fit-content;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        list-style: none;
+        padding: 10px;
+        padding-top: 0;
+        border-radius: 0 0 0 15px;
+    }
+
+    .lists>li {
+        margin-top: 10px;
+    }
+
+    .darkLists {
+        background: rgb(8 3 57 / 90%);
+        font-weight: bolder;
+        box-shadow: 0px 3px 5px #4d4c4c;
+    }
+
+    .lightLists {
+        background: rgba(155, 167, 228, 0.9);
+        font-weight: bolder;
+        box-shadow: -3px 3px 4px #9d9d9d;
+
+    }
+
+    .switchNav {
+        display: none;
+    }
+
+
+    /* lists Toggle Button */
+
+    .switched {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        background: linear-gradient(45deg,
+                rgb(183, 0, 255) 20%,
+                rgb(255, 0, 170) 100%);
+        box-shadow: 0 5px 25px rgba(0, 0, 0, 0.363);
+        border-radius: 5px;
+    }
+
+    .switched input {
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        cursor: pointer;
+        position: absolute;
+    }
+
+    .switched div {
+        width: 80%;
+        height: 80%;
+        margin: 10%;
+        position: absolute;
+    }
+
+    .switched span {
+        background: #fff;
+        width: 100%;
+        height: 2px;
+        border-radius: 5px;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: transform 0.5s, width 0.5s;
+    }
+
+    .switched .line-1 {
+        width: 50%;
+        transform: translate(-100%, -10px);
+        transform-origin: 0 0;
+    }
+
+    .switched .line-3 {
+        width: 50%;
+        left: auto;
+        right: 0;
+        transform: translate(0, 10px);
+        transform-origin: 100% 0;
+    }
+
+    input:checked+div>span.line-1 {
+        transform: translate(0, 0) rotate(-45deg);
+    }
+
+    input:checked+div>span.line-3 {
+        transform: translate(-100%, 0) rotate(-45deg);
+    }
+
+    input:checked+div>span.line-2 {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+    .input-box>input{
+        width: 120px;
+    }
+}
+
+@media screen and (min-width:850px) {
+    .switchNav {
+        width: 81vw;
+        font-size: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+        cursor: pointer;
+        color: purple;
+    }
+
+    .switchNav li:active {
+        color: #371ec4;
+    }
+}

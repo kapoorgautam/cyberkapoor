@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* app */
+.App {
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ContentPage */
+.ContentPage {
+  /* border: 1px solid blue; */
+  width: 100vw;
+  height: max-content;
+}
+
+.dark {
+  /* background-image: linear-gradient(-225deg, #10265e 0%, #31275e 48%, #332545 100%); */
+  background-color: #131034;
+}
+
+.light {
+  background-image: linear-gradient(-225deg, #5271C4 0%, #B19FFF 48%, #ECA1FE 100%);
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.ContentPage .CardSection {
+  /* border: 1px solid red; */
+  height: max-content;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* grid-template-rows: repeat(4, 1fr); */
+  row-gap: 10px;
+  column-gap: 40px;
+}
+
+@media screen and (max-width:1260px) {
+  .ContentPage .CardSection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width:850px) {
+  .ContentPage .CardSection {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+}
+
+.space {
+  height: 50px;
+  width: 100%;
+}
+
+.trending {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 35px;
+  margin: 0 10px 10px 10px;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.darkTrending {
+  color: #6f2ab9;
+}
