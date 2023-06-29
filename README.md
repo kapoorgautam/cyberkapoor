@@ -62,4 +62,4 @@ The website includes the following features:
 
 ## [Gautam kapoor](https://github.com/kapoorgautam) is a webdeveloper of this website. Created this website using React for fronted and for backend uses Hygraph as a CMS technologies.
 
-## [SinniS](https://github.com/SinniS1)  is a content writer. He ensures that posts or blogs are up-to-dated and easy to digest for beginners.
+## [SinniS](https://github.com/SinniS1)  is a webdeveloper of this website. Created this website using React for fronted and for backend uses Hygraph as a CMS technologies.
