@@ -1,8 +1,8 @@
-# NetworkWizards
+# Cyberkapoor
 
 ## Purpose
 
-[Networkwizards](https://networkwizards.tech) is an blogging website that is designed to provide its users with a range of content on four different sections: Trending, Coding, Hacking, and Networking. \
+cyberkapoor is a blogging website that is designed to provide its users with a range of content on four different sections: Trending, Coding, Hacking, and Networking. \
 Each section is dedicated to a specific topic, and users can browse through the content to find articles, tutorials, and other resources related to each topic.
 
 ---
@@ -50,7 +50,7 @@ The website includes the following features:
 
 ### Cards
 
-> - Each section page on networkwizards includes cards that display the title and a brief description of the blog post.
+> - Each section page on cyberkapoor includes cards that display the title and a brief description of the blog post.
 > - The cards help the users to quickly scan through the available content and identify which posts may be most relevant to their interests.
 > - The cards are designed to be visually appealing and easy to read, with a clean layout that emphasizes the title and description of each post.
 > - Users can click on any card to view the full blog post and read more about the topic.
@@ -60,6 +60,6 @@ The website includes the following features:
 
 # Developers
 
-## [SinniS](https://github.com/SinniS1) is a webdeveloper of this website. Created this website using React for fronted and for backend uses Hygraph as a CMS technologies.
+## [Gautam kapoor](https://github.com/kapoorgautam) is a webdeveloper of this website. Created this website using React for fronted and for backend uses Hygraph as a CMS technologies.
 
-## [Rajvinder](https://github.com/sudouserraj) is a content writer. He ensures that posts or blogs are up-to-dated and easy to digest for beginners.
+## [SinniS](https://github.com/SinniS1)  is a content writer. He ensures that posts or blogs are up-to-dated and easy to digest for beginners.
